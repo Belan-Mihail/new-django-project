@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hello_world',
     'about',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -75,6 +76,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'my_project.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.gitpod.io/",
+    "https://*.herokuapp.com"
+]
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
